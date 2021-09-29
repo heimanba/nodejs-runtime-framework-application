@@ -1,0 +1,89 @@
+name: publish package to serverless-hub
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install setuptools wheel twine
+          pip install requests
+      # connect-runtime-app
+      - name: Publish connect-runtime-app
+        if: ${{ contains(github.event.release.body, 'connect-runtime-app') }}
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd connect-runtime-app
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      # express-runtime-app
+      - name: Publish express-runtime-app
+        if: ${{ contains(github.event.release.body, 'express-runtime-app') }}
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd express-runtime-app
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      # koa-runtime-app
+      - name: Publish koa-runtime-app
+        if: ${{ contains(github.event.release.body, 'koa-runtime-app') }}
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd koa-runtime-app
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      # nest-runtime-app
+      - name: Publish nest-runtime-app
+        if: ${{ contains(github.event.release.body, 'nest-runtime-app') }}
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd nest-runtime-app
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      # nuxt-spa-app
+      - name: Publish nuxt-spa-app
+        if: ${{ contains(github.event.release.body, 'nuxt-spa-app') }}
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd nuxt-spa-app
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      # nuxt-ssr-app
+      - name: Publish nuxt-ssr-app
+        if: ${{ contains(github.event.release.body, 'nuxt-ssr-app') }}
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd nuxt-ssr-app
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..

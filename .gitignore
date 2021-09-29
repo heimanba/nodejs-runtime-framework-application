@@ -1,0 +1,11 @@
+
+.vscode
+.idea
+.s
+
+package-lock.json
+yarn.lock
+node_modules
+
+dist
+build

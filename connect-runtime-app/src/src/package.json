@@ -1,0 +1,15 @@
+{
+  "name": "connect-runtime-app",
+  "version": "1.0.0",
+  "description": "快速部署一个Connect框架到阿里云函数计算",
+  "main": "app.js",
+  "dependencies": {
+    "connect": "^3.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

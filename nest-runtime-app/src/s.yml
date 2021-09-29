@@ -1,0 +1,35 @@
+edition: 1.0.0          #  命令行YAML规范版本，遵循语义化版本（Semantic Versioning）规范
+name: nest-runtime-app       # 项目名称
+access: '{{access}}'    #  秘钥别名
+
+services:
+  nodejsNext: #  服务名称
+    component: devsapp/nest-runtime
+    props: #  组件的属性值
+      region: cn-hangzhou
+      service:
+        name: nodejs-runtime-service
+        logConfig: auto
+      function:
+        name: nest-runtime-app
+        description: nest runtime app
+        runtime: nodejs12
+        codeUri: './.serverless'
+        handler: index.handler
+        memorySize: 256
+        timeout: 6
+        # environmentVariables:
+        #   NODE_DEBUG: net
+      triggers:
+        - name: http-trigger
+          type: http
+          config:
+            authType: anonymous
+            methods:
+              - GET
+              - POST
+      customDomains:
+        - domainName: auto
+          protocol: HTTP
+          routeConfigs:
+            - path: /*
