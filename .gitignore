@@ -2,6 +2,7 @@
 .vscode
 .idea
 .s
+.serverless
 
 package-lock.json
 yarn.lock
