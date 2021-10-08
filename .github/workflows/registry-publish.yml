@@ -87,3 +87,14 @@ jobs:
           ls
           python hub-publish.py
           cd ..
+      # thinkjs-runtime-app
+      - name: Publish thinkjs-runtime-app
+        if: ${{ contains(github.event.release.body, 'thinkjs-runtime-app') }}
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd thinkjs-runtime-app
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
