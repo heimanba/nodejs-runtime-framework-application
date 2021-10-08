@@ -4,6 +4,7 @@
   "description": "快速部署一个Express框架到阿里云函数计算",
   "main": "app.js",
   "dependencies": {
+    "@serverless-devs/fc-http": "latest",
     "express": "^4.17.1"
   },
   "devDependencies": {},

@@ -4,6 +4,7 @@
   "description": "快速部署一个Koa框架到阿里云函数计算",
   "main": "app.js",
   "dependencies": {
+    "@serverless-devs/fc-http": "latest",
     "koa": "^2.13.1",
     "koa-router": "^10.1.1"
   },

@@ -8,7 +8,7 @@ services:
     props: #  组件的属性值
       region: cn-hangzhou
       service:
-        name: nuxtjs-service
+        name: nodejs-runtime-service
         logConfig: auto
       function:
         name: nuxt-ssr-app

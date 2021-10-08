@@ -33,5 +33,3 @@ services:
           protocol: HTTP
           routeConfigs:
             - path: /*
-              serviceName: nodejs-runtime-service
-              functionName: thinkjs-runtime-app
