@@ -21,7 +21,7 @@ class HomeController extends Controller {
 
   async api() {
     const { ctx } = this;
-    ctx.body = 'api';
+    ctx.body = { foo: 'bar' };
   }
 }
 
