@@ -1,12 +1,12 @@
 Type: Application
-Name: thinkjs-runtime-app
+Name: egg-runtime-app
 Version: 0.0.1
 Provider:
   - 阿里云
-Description: thinkjs 应用
-HomePage: https://github.com/devsapp/thinkjs-runtime-app
+Description: egg 应用
+HomePage: https://github.com/devsapp/egg-runtime-app
 Tags:
-  - thinkjs
+  - egg
   - 云应用
 Category: 基础云服务
 Service:
