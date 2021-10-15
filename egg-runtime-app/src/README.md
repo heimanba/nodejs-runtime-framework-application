@@ -1,6 +1,6 @@
 # Egg 应用示例
 
-这个目录是基于云开发的一个 [Egg](https://expressjs.com/zh-cn/) 应用示例，包含 Egg + 云函数，可以基于 **[Serverless Devs](https://www.serverless-devs.com/)** 框架将项目一键部署到云开发环境
+这个目录是基于云开发的一个 [Egg](https://eggjs.org/zh-cn/) 应用示例，包含 Egg + 云函数，可以基于 **[Serverless Devs](https://www.serverless-devs.com/)** 框架将项目一键部署到云开发环境
 
 ## 部署一个 Egg 应用
 ![img](https://images.devsapp.cn/devs-github/logo.jpg)

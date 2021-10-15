@@ -1,8 +1,8 @@
-# Nuxt Spa 应用示例
+# Koa 应用示例
 
-这个目录是基于云开发的一个 [Nuxt Spa](https://nuxtjs.org/) 应用示例，包含 Nuxt Spa + 云函数，可以基于 **[Serverless Devs](https://www.serverless-devs.com/)** 框架将项目一键部署到云开发环境
+这个目录是基于云开发的一个 [Koa](https://koa.bootcss.com/) 应用示例，包含 Koa + 云函数，可以基于 **[Serverless Devs](https://www.serverless-devs.com/)** 框架将项目一键部署到云开发环境
 
-## 部署一个 Nuxt Spa 应用
+## 部署一个 Koa 应用
 ![img](https://images.devsapp.cn/devs-github/logo.jpg)
 
 ### 步骤一. 准备工作
@@ -14,7 +14,7 @@
 在命令行执行
 
 ```
-s init nuxt-spa-app
+s init koa-runtime-app
 ```
 
 ### 步骤三. 一键部署
@@ -43,6 +43,6 @@ npm run deploy
 
 查看 [Serverless Devs 配置](https://github.com/Serverless-Devs/Serverless-Devs).
 
-### Nuxt 开发文档
+### Koa 开发文档
 
-查看 [starter](https://nuxtjs.org/docs/directory-structure/nuxt-config/).
+查看 [starter](https://koa.bootcss.com/).

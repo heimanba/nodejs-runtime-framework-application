@@ -1,69 +1,48 @@
-# nuxt-ssr-app
+# Nuxt SSR 应用示例
 
-## Build Setup
+这个目录是基于云开发的一个 [Nuxt SSR](https://nuxtjs.org/) 应用示例，包含 Nuxt SSR + 云函数，可以基于 **[Serverless Devs](https://www.serverless-devs.com/)** 框架将项目一键部署到云开发环境
 
-```bash
-# install dependencies
-$ npm install
+## 部署一个 Nuxt SSR 应用
+![img](https://images.devsapp.cn/devs-github/logo.jpg)
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+### 步骤一. 准备工作
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+具体步骤请参照 [准备云开发环境和 Serverless Devs 命令工具](https://www.serverless-devs.com/docs/install)
 
-# generate static project
-$ npm run generate
+### 步骤二. 初始化应用示例
+
+在命令行执行
+
+```
+s init nuxt-ssr-app
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+### 步骤三. 一键部署
 
-## Special Directories
+进入到项目目录，在命令行执行
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+```
+s deploy
+```
 
-### `assets`
+## 开发命令及配置
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+### 本地开发
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+```
+npm run dev
+```
 
-### `components`
+### 上线部署
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+```
+npm run deploy
+```
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+### Serverless Devs 相关开发配置
 
-### `layouts`
+查看 [Serverless Devs 配置](https://github.com/Serverless-Devs/Serverless-Devs).
 
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+### Nuxt 开发文档
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+查看 [starter](https://nuxtjs.org/docs/directory-structure/nuxt-config/).
