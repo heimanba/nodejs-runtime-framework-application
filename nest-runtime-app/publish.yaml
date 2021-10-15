@@ -1,6 +1,6 @@
 Type: Application
 Name: nest-runtime-app
-Version: 0.0.3
+Version: 0.0.4
 Provider:
   - 阿里云
 Description: 快速部署一个 nest 应用到阿里云函数计算
