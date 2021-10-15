@@ -17,8 +17,21 @@
           To get started, remove <code class="bg-gray-100 text-sm p-1 rounded border">components/Tutorial.vue</code> and start coding in <code class="bg-gray-100 text-sm p-1 rounded border">pages/index.vue</code>. Have fun!
         </p>
       </div>
+      <div style="margin: 16px">
+        <p>Welcome to Alibaba Serverless Devs + NuxtJs</p>
+        <h2 class="text-2xl leading-7 font-semibold"> 部署一个 Nuxt Spa 应用</h2>
+        <h3 style="font-size: 16px; font-weight: 500; margin-top: 16px">步骤一. 准备工作</h3>
+        <p>具体步骤请参照 <a style="color: #0077cc" href="https://www.serverless-devs.com/docs/install">准备云开发环境和 Serverless Devs 命令工具</a>
+        </p>
+        <h3 style="font-size: 16px; font-weight: 500; margin-top: 16px">步骤二. 初始化应用示例</h3>
+        <p>s init nuxt-spa-app</p>
+        <h3 style="font-size: 16px; font-weight: 500; margin-top: 16px">步骤三. 一键部署</h3>
+        <p>进入到项目目录，在命令行执行</p>
+        <pre>s deploy</pre>
+        <h2 style="font-size: 16px; font-weight: 500; margin-top: 16px">开发部署工具: <a style="color: #0077cc" href="https://github.com/Serverless-Devs/Serverless-Devs">Serverless Devs</a></h2>
+      </div>
       <div class="flex justify-center pt-4 space-x-2">
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank"><svg
+        <a href="https://github.com/nuxt/nuxt.js" target="_blank" ><svg
           class="w-6 h-6 text-gray-600 hover:text-gray-800"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"

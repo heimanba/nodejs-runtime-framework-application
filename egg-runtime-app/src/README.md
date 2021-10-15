@@ -1,33 +1,48 @@
-# egg-runtime-app
+# Egg 应用示例
 
-快速部署一个egg项目
+这个目录是基于云开发的一个 [Egg](https://expressjs.com/zh-cn/) 应用示例，包含 Egg + 云函数，可以基于 **[Serverless Devs](https://www.serverless-devs.com/)** 框架将项目一键部署到云开发环境
 
-## QuickStart
+## 部署一个 Egg 应用
+![img](https://images.devsapp.cn/devs-github/logo.jpg)
 
-<!-- add docs here for user -->
+### 步骤一. 准备工作
 
-see [egg docs][egg] for more detail.
+具体步骤请参照 [准备云开发环境和 Serverless Devs 命令工具](https://www.serverless-devs.com/docs/install)
 
-### Development
+### 步骤二. 初始化应用示例
 
-```bash
-$ npm i
-$ npm run dev
-$ open http://localhost:7001/
+在命令行执行
+
+```
+s init egg-runtime-app
 ```
 
-### Deploy
+### 步骤三. 一键部署
 
-```bash
-$ npm start
-$ npm stop
+进入到项目目录，在命令行执行
+
+```
+s deploy
 ```
 
-### npm scripts
+## 开发命令及配置
 
-- Use `npm run lint` to check code style.
-- Use `npm test` to run unit test.
-- Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
+### 本地开发
 
+```
+npm run dev
+```
 
-[egg]: https://eggjs.org
+### 上线部署
+
+```
+npm run deploy
+```
+
+### Serverless Devs 相关开发配置
+
+查看 [Serverless Devs 配置](https://github.com/Serverless-Devs/Serverless-Devs).
+
+### Egg 开发文档
+
+查看 [starter](https://eggjs.org/en/intro/quickstart.html).

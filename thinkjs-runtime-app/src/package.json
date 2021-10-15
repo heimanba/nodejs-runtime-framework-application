@@ -2,9 +2,10 @@
   "name": "thinkjs-runtime-app",
   "description": "application created by thinkjs",
   "version": "1.0.0",
-  "author": "huangfushan <243973775@qq.com>",
+  "author": "mamba",
   "scripts": {
     "start": "node development.js",
+    "deploy": "s deploy",
     "test": "THINK_UNIT_TEST=1 nyc ava test/ && nyc report --reporter=html",
     "compile": "babel --no-babelrc src/ --presets think-node --out-dir app/",
     "lint": "eslint src/",
@@ -45,7 +46,7 @@
     "metadata": {
       "name": "thinkjs-runtime-app",
       "description": "application created by thinkjs",
-      "author": "huangfushan <243973775@qq.com>",
+      "author": "mamba",
       "babel": true
     },
     "projectName": "src",

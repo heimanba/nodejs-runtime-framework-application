@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  h2= '部署一个 Koa 应用'
+  img(width="500" src="https://images.devsapp.cn/devs-github/logo.jpg")
+  h3= '步骤一. 准备工作'
+  p 具体步骤请参照 <a href="https://www.serverless-devs.com/docs/install">准备云开发环境和 Serverless Devs 命令工具</a>
+  h3= '步骤二. 初始化应用示例'
+  pre= 's init koa-runtime-app'
+  h3= '步骤三. 一键部署'
+  p 进入到项目目录，在命令行执行
+  pre= 's deploy'
+  h2  开发部署工具： <a href="https://github.com/Serverless-Devs/Serverless-Devs">Serverless Devs</a>
